@@ -1,6 +1,7 @@
 //const API_URL = "http://localhost:5221"; // später Backend-URL
 //const API_URL = "https://localhost:7185";
 const API_URL = "classnoteseno-erandfe9hucnczhn.westeurope-01.azurewebsites.net";
+//https://classnoteseno-erandfe9hucnczhn.westeurope-01.azurewebsites.net/
 
 export async function getNotes() {
   const res = await fetch(`${API_URL}/notes`);
