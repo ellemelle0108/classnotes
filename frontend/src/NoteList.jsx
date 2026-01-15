@@ -1,4 +1,4 @@
-import './NoteList.css';
+
 
 export default function NoteList({ notes, onDelete }) {
   return (

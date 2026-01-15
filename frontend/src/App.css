@@ -1,19 +1,26 @@
 #root {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
 
+/* Logo Styling - einfach und schön */
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
-  transition: filter 300ms;
+  transition: filter 300ms, transform 300ms;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
+  transform: scale(1.05);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -33,10 +40,113 @@
   }
 }
 
+/* Card Styling - sauber und modern */
 .card {
   padding: 2em;
+  margin: 2rem auto;
+  max-width: 600px;
+  background: white;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
 }
 
+.card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.card h2 {
+  color: #2d3748;
+  font-size: 1.8em;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.card p {
+  color: #4a5568;
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+
+/* Read the Docs - einfacher */
 .read-the-docs {
-  color: #888;
+  color: #718096;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+/* Einfache Buttons */
+.button {
+  display: inline-block;
+  padding: 0.8em 1.8em;
+  background: #646cff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  margin: 1em 0.5em;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #575fdd;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(100, 108, 255, 0.2);
+}
+
+/* Dark Mode - einfach gehalten */
+@media (prefers-color-scheme: dark) {
+  .logo {
+    background: #2d3748;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card {
+    background: #2d3748;
+    border-color: #4a5568;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card h2 {
+    color: #e2e8f0;
+  }
+  
+  .card p {
+    color: #cbd5e0;
+  }
+  
+  .read-the-docs {
+    color: #a0aec0;
+    border-top-color: #4a5568;
+  }
+  
+  .button {
+    background: #646cff;
+  }
+  
+  .button:hover {
+    background: #575fdd;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #root {
+    padding: 1.5rem 1rem;
+  }
+  
+  .logo {
+    height: 5em;
+    padding: 1em;
+  }
+  
+  .card {
+    padding: 1.5em;
+    margin: 1.5rem 0.5rem;
+  }
 }
