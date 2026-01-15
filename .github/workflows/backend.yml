@@ -43,5 +43,5 @@ jobs:
           app-name: 'classnotes-api' # Replace with your Azure Web App name
           # Select "Download publish profile" from Azure portal 
           # and add the content to the repository secrets as AZURE_WEBAPP_PUBLISH_PROFILE
-          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E5F936A3252A48D1893F1CE13FCBDE2B }}
           package: ./publish
